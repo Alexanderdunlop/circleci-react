@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/Alexanderdunlop/circleci-react.svg?style=shield)](https://circleci.com/gh/Alexanderdunlop/circleci-react) [![Netlify Status](https://api.netlify.com/api/v1/badges/05df743c-0af9-464e-9015-0b80ec2dbd5e/deploy-status)](https://app.netlify.com/sites/festive-pasteur-dc6a0c/deploys)
+
 This project was created for testing [CircleCI](https://github.com/circleci).
 (CircleCI) Continuous Integration and Deployment. This can run shell commands through github.
 This project was also created for testing [Netlify](https://github.com/netlify).

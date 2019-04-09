@@ -45,32 +45,13 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### `netlify:deploy`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Deploys the `build` folder to netlify using environment variables.<br>
+NETLIFY_AUTH_TOKEN and NETLIFY_SITE_ID must be set for this to work.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Automation
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Whenever a git commit is pushed to the master branch CircleCI will run .circleci config.yml.<br>
+In .circleci `yarn netlify:deploy` runs at the end which takes the build folder and sends it to Netlify.<br>
+The git repo must be integrated with both CircleCI & Netlify.

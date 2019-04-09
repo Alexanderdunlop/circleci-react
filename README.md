@@ -1,3 +1,11 @@
+This project was created for testing [CircleCI](https://github.com/circleci).
+(CircleCI) Continuous Integration and Deployment. This can run shell commands through github.
+This project was also created for testing [Netlify](https://github.com/netlify).
+Netlify builds, deploys and hosts your front-end. This is being done through github.
+
+Because CircleCI can test the build, Netlify is altered in this project to be deployed using CircleCI instead of the normal Git intergration.
+This is why this project has a branch called 'dummy' as Netlify will look for changes on that branch (which will never be updated).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
